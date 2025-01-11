@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la Cuenta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Datos de la Cuenta</h1>
+        <form id="accountForm">
+            <label for="accountData">Datos de la Cuenta:</label>
+            <input type="text" id="accountData" name="accountData" required>
+
+            <label for="purchaseDate">Fecha de Compra:</label>
+            <input type="text" id="purchaseDate" name="purchaseDate" readonly>
+
+            <label for="provider">Proveedor:</label>
+            <input type="text" id="provider" name="provider" value="VENDE Y GANA" readonly>
+
+            <label for="expiryDate">Fecha de Vencimiento:</label>
+            <input type="text" id="expiryDate" name="expiryDate" readonly>
+
+            <label for="clientName">Nombre del Cliente:</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="clientPhone">Teléfono:</label>
+            <input type="text" id="clientPhone" name="clientPhone" required>
+
+            <button type="button" onclick="saveData()">Guardar</button>
+            <button type="button" onclick="copyData()">Copiar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
